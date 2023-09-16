@@ -1,0 +1,12 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: try-rust-num-cpus
+spec:
+  containers:
+  - name: try-rust-num-cpus
+    image: asfaltboy/try-rust-num-cpus:latest
+    resources:
+      limits:
+        cpu: 2000m
+    command: ["sleep", "600"]
